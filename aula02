@@ -1,0 +1,59 @@
+Bucles
+Existen varios bucles en Python:
+
+Bucle while
+Ese tipo de bucle repite un conjunto de instrucciones mientras se cumpla una determinada condición que se evalúa al principio de cada ejecución:
+
+while ((input != "s") and (input != "n")):
+    input=raw_input("Are you reading ricveal.com? (s-n) ")
+Bucle for
+Los bucles for sirven para iterar una variable sobre una secuencia. La potencia de esta clase de bucles es muy amplia por lo que se usan en gran cantidad de ocasiones.
+
+sec = [“1”, “2”, “3”]
+for i in sec:
+    print (i)
+Que nos devuelve :
+
+1 2 3
+Una forma bastante típica de iterar en el bucle for es definiendo la lista de iteración con la función range(). Veamos un ejemplo:
+
+for i in range(5):
+    print i
+que nos devuelve:
+
+0 1 2 3 4
+Palabras reservadas
+En Python, al igual que en otros lenguajes de programación, existen una serie de palabras que no podemos emplear ya que están reservadas para el uso interno del lenguaje.
+
+Ahora que hemos visto los bucles, podemos ver algunas palabras reservadas:
+
+continue : nos lleva de nuevo al principio del bucle aunque no se haya terminado de ejecutar el anterior ciclo.
+break : rompe el bucle. Hace que salgamos del bucle directamente sin necesidad de volver a evaluar la condición y aunque siga siendo cierta.
+Funciones
+def calcula_paga(horas, tasa) : # Inicio Función
+    if horas > 40:
+        ex = horas-40
+        total = 40.0 * tasa + ex * 1.5 * tasa
+    else :
+        total = horas * tasa
+    return total
+# Fin Función
+
+inp = raw_input("Enter Hours:")
+hours=float(inp)
+inp = raw_input("Enter Fee:")
+fee=float(inp)
+pago = calcula_paga(hours,fee) # Llamada a la función print "Paga:",pago
+Como ves, definimos las funciones antes de llamarlas. La nomenclatura es clara:
+
+def **nombre_función** (variables_que_le_paso):
+    operaciones return datos_a_devolver
+Nota: no siempre tenemos que pasarle parámetros a la función en la llamada o querer devolver datos.
+
+Con esto acabamos el post de hoy. Poco a poco, ya sabemos bastante de Python. Con estos dos artículos que llevamos deberíamos tener conocimientos suficiente como para crear gran número de programas.
+
+Ahora mismo tenemos capacidad para pintar en pantalla información, pedírsela al usuario con "raw_input" así como el conocimiento necesario para ejecutar una gran cantidad de operaciones aritméticas y lógicas con las que crear, valga la redundancia, la lógica del programa.
+
+Me gustaría que, con lo que sabes, intentes hacer un programa sencillo capaz de resolverte un problema real. ¿Qué tal la experiencia?
+
+Nos vemos en el próximo capítulo ;)
